@@ -9,6 +9,16 @@
             "projectName": "springboot",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DashboardApplication<springboot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.admin.dashboard.DashboardApplication",
+            "projectName": "springboot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
