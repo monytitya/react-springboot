@@ -10,6 +10,18 @@ import {
   CardTitle,
 } from "../ui/card"
 
+//token
+const token = localStorage.getItem("token")
+
+const response = await fetch(
+  "http://localhost:8080/api/dashboard/stats",
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+)
+
 export default function LoginForm({ onLoginSuccess }) {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
